@@ -1,116 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Spaces on Campus</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 400px;
         }
-        header h1 {
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 400px;
+            height: 300px;
+        }
+
+        div.desc {
+            padding: 15px;
             text-align: center;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #333;
-            margin-top: 30px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        ul ul {
-            list-style-type: circle;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        .inline_image {
-            width: 150px;
-            height: auto;
-            margin-left: 10px;
-        }
-        .study-place {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .study-place img {
-            margin-left: 20px;
         }
     </style>
 </head>
+
 <body>
+    <a href="#main">Skip to Main Content</a>
     <header>
+        <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="study_spaces_campus.html"> Study Spaces on Campus</a></li>
+                <li>Page 2</li>
+                <li>Page 3</li>
+            </ul>
+        </nav>
         <h1>Study Spaces on Campus</h1>
     </header>
-    <a href = "#main">Skip to Main Content</a>
-    <main>
+
+    <main id="main">
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Welcome to University of Michigan! This page provides an overview of several study locations on North
+                and Central Campuses.
+            </p>
+        </section>
         <section>
             <h2>North Campus</h2>
+            <div class="gallery">
+                <a target="_blank" href="images/duder.jpg">
+                    <img src="images/duder.jpg" alt="duder" width="600" height="400">
+                </a>
+                <div class="desc">Duderstadt Center (The Dude)</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/pierpont.jpeg">
+                    <img src="images/pierpont.jpeg" alt="pierpont" width="600" height="400">
+                </a>
+                <div class="desc">Pierpont Commons</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/ncrc.jpg">
+                    <img src="images/ncrc.jpg" alt="NCRC" width="600" height="400">
+                </a>
+                <div class="desc">North Campus Research Complex (NCRC)</div>
+            </div>
+
+            <br style="clear:both">
             <ul>
-                <li> 
-                    <div class="study-place">
-
-                    <strong>Duderstadt Center (The Dude)</strong>
-                    <img class="inline_image" src="./images/duder.jpg" alt="Duderstadt Center">
-                    </div>
-                    <p>
-                        A versatile study space with computer labs, collaborative rooms, and quiet areas. It also has the Engineering Library and the famous Media Union.
-                    </p>
-                </li>
-
-                <li> 
-                    <div class="study-place">
-                        <strong>Pierpont Commons</strong>
-                        <img class="inline_image" src="./images/pierpont.jpeg" alt="Pierpont Commons">
-                    </div>
-                    <p>
-                        Various seating areas and study spaces are available, including the Atrium and the Fireside Cafe.
-                    </p>
-                </li>
                 <li>
-                    <div class="study-place">
-                        <strong>North Campus Research Complex (NCRC)</strong>
-                        <img class="inline_image" src="./images/ncrc.jpg" alt="North Campus Research Complex">
-                    </div> 
+                    <strong>Duderstadt Center (The Dude)</strong>
+                    <p>
+                        A versatile study space with computer labs, collaborative rooms, and quiet areas. It also has
+                        the Engineering Library and the famous Media Union.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>Pierpont Commons</strong>
+                    <p>
+                        Various seating areas and study spaces are available, including the Atrium and the Fireside
+                        Cafe.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>North Campus Research Complex (NCRC)</strong>
                     <p>
                         Some buildings have specific study areas available for students.
                     </p>
                 </li>
             </ul>
+
         </section>
 
         <section>
             <h2>Central Campus</h2>
+            <div class="gallery">
+                <a target="_blank" href="images/UGLI.jpg">
+                    <img src="images/UGLI.jpg" alt="UGLI" width="600" height="400">
+                </a>
+                <div class="desc">Undergraduate Library (UGLi)</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/hatcher.jpg">
+                    <img src="images/hatcher.jpg" alt="hacther" width="600" height="400">
+                </a>
+                <div class="desc">Hatcher Graduate Library</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="images/union.jpg">
+                    <img src="images/union.jpg" alt="union" width="600" height="400">
+                </a>
+                <div class="desc">Michigan Union</div>
+            </div>
+            <br style="clear:both">
             <ul>
-                <li> 
-                    <div class="study-place">
-                        <strong>Undergraduate Library (UGLi):</strong>
-                        <img class="inline_image" src="./images/ugli.jpg" alt="Undergraduate Library">
-                    </div>
-                    <ul>
-                        <li>First Floor: More social and group study-friendly.</li>
-                        <li>Second and Third Floors: Quieter with more individual study spaces.</li>
-                        <li>Computer Labs: Available for students who need computer access.</li>
-                    </ul>
+                <li>
+                    <strong>Undergraduate Library (UGLi):</strong>
+                    <p>
+                        The UGLi is a popular study spot for undergraduate students. It has a mix of individual and
+                        group study spaces, as well as computer labs.
+                    </p>
                 </li>
                 <li>
-                    <div class="study-place">
-                        <strong>Hatcher Graduate Library</strong>
-                        <img class="inline_image" src="./images/hatcher.jpg" alt="Hatcher Graduate Library">
-                    </div>
-                    <ul>
-                        <li>Reference Reading Room: A classic, quiet study spot.</li>
-                        <li>Gallery: Good for collaborative work.</li>
-                        <li>Graduate Study Room: Reserved for grad students, very quiet.</li>
-                    </ul>
+                    <strong>Hatcher Graduate Library</strong>
+                    <p>
+                        The Hatcher Graduate Library is a popular study spot for graduate students. It has a mix of
+                        individual and group study spaces, as well as computer labs.
+                    </p>
+                </li>
+                <li>
+                    <strong>Michigan Union</strong>
+                    <p>
+                        The Michigan Union has various study spaces, including lounges, cafes, and the Willis Ward
+                        Lounge.
+                    </p>
                 </li>
             </ul>
         </section>
     </main>
+    <footer>
+        <p>MSI Academic Advising | <a
+                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
+                Advising </a></p>
+    </footer>
 </body>
+
 </html>
