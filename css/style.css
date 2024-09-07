@@ -1,0 +1,46 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 400px;
+    height: 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+p {
+    width: 50%; 
+    margin-left: 0;
+    padding: 10px;
+}
+
+div.resource{
+    width: 30%; /* 设置每个div的宽度 */
+    height: 700px; /* 设置每个div的高度 */
+    float: left; /* 左浮动 */
+    margin-right: 3%; /* 设置两个div之间的间距 */
+    padding: 10px;
+    background-color: #f0f0f0;
+    box-sizing: border-box; 
+}
+
+div.resource:last-child{
+    margin-right: 0;
+}
+
+img.resource-fig{
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
