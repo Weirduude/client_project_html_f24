@@ -20,27 +20,49 @@ div.desc {
 }
 
 p {
-    width: 50%; 
+    width: 100%; 
     margin-left: 0;
     padding: 10px;
 }
 
-div.resource{
-    width: 30%; /* 设置每个div的宽度 */
-    height: 700px; /* 设置每个div的高度 */
-    float: left; /* 左浮动 */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.resource {
+    flex: 1 1 30%; /* 设置每个div占据父容器的30% */
+    max-width: 30%;
+    height: auto;
     margin-right: 3%; /* 设置两个div之间的间距 */
     padding: 10px;
     background-color: #f0f0f0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    margin-bottom: 20px; /* 添加底部间距 */
 }
 
-div.resource:last-child{
+div.resource:last-child {
     margin-right: 0;
 }
 
-img.resource-fig{
-    width: 400px;
-    height: 350px;
+img.resource-fig {
+    width: 100%; /* 设置图片宽度为div的100% */
+    height: auto; /* 高度自动调整 */
     object-fit: cover;
+}
+
+.link-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* 初始颜色 */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 鼠标悬停时的样式 */
+.link-box:hover {
+    background-color: #2980b9; /* 鼠标悬停时变深的颜色 */
 }
