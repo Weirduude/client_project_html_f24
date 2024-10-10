@@ -1,3 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00274C;
+    color: #FFF;
+    font-size: 20%;
+}
+
+
+
+/* H_n */
+h1 {
+    font-size: 40%;
+    text-align: center;
+    padding: 15%;
+}
+
+h2 {
+    font-size: 30%;
+}
+
+h3 {
+    font-size: 25%;
+}
+
+/* link */
+
+.link {
+    color: #FFF;
+    font-size: 30%;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #FFCB05;
+}
+
+/* <p> */
+
+p {
+    line-height: 2;
+}
+
+/* img */
+
+
+.logo{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 0;
+    right: 0;
+}
+
+/* div */
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -66,3 +120,35 @@ img.resource-fig {
 .link-box:hover {
     background-color: #2980b9; /* 鼠标悬停时变深的颜色 */
 }
+
+
+.grid2col {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center; 
+    gap: 10%; 
+}
+
+.grid-paragraph {
+    padding: 0; 
+    margin: 0; 
+}
+
+.grid-paragraph ul{
+    font-size: 100%;
+}
+
+.grid-img{
+    width: 100%;
+    justify-self: end;
+}
+
+.grid-img img {
+    width: 70%; 
+    height: auto;   
+    /* justify-self: end; */
+}
+
+
+
+
