@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Basic Needs</title>
 </head>
 <body>
     <a href="#main">Skip to Main Content</a>
     <header>
-        <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
+        <div class="grid2col">
+            <div class="grid-img">
+                <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" >
+            </div>
+
+            <a href="#main" class="link grid-paragraph" >Skip to Main Content</a>
+        </div>
+
+        <nav class="link">
+            <p> Go to: </p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="study_spaces_campus.html"> Study Spaces on Campus</a></li>
-                <li><a href="basic_needs.html"> Student Life: Basic Needs</a></li>
-                <li><a href="academic_advising.html"> Academic Advising</a></li>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="study_spaces_campus.html" class="link"> Study Spaces on Campus</a></li>
+                <li><a href="basic_needs.html" class="link"> Student Life: Basic Needs</a></li>
+                <li><a href="academic_advising.html" class="link"> Academic Advising</a></li>
             </ul>
         </nav>
         <h1>Student Life: Basic Needs</h1>
@@ -36,82 +45,70 @@
         <section class="resources-section">
             <div class="container">
                 <div class="resource">
-                    <h3> Emergency Ride</h3>
-                    <img src="./images/basic_needs/emergencyride.jpg" class="resource-fig" alt="Emergency Ride" >
-                    <p>Emergency Ride offers a free taxi service 24 hours a day, 7 days a week, to U-M faculty, staff and students located on the Ann Arbor campus. 
+                    <h3>Emergency Ride</h3>
+                    <img src="./images/basic_needs/emergencyride.jpg" class="resource-fig" alt="Emergency Ride">
+                    <p>Emergency Ride offers a free taxi service 24 hours a day, 7 days a week, to U-M faculty, staff, and students located on the Ann Arbor campus. 
                         Service may be requested for emergency situations involving personal or family illness/injuries, unscheduled overtime, mandatory work hours, or stranded carpool/vanpool riders.
                     </p>
-                    
-                    <strong>
-                        Phone: (734) 763-1131 
-                        <br>
-                        Webiste: <a href="http://ltp.umich.edu/campus-transit/after-hours/">Visit the Emergency Ride website</a>
-                    </strong>            
+                    <p>
+                        Phone: (734) 763-1131 <br>
+                        Webiste: <a href="http://ltp.umich.edu/campus-transit/after-hours/" class="link">Visit the Emergency Ride website</a>
+                    </p>
                 </div>
-
+        
                 <div class="resource">
-                    <h3> Food Gatherers</h3>
+                    <h3>Food Gatherers</h3>
                     <img src="./images/basic_needs/foodgathers.jpg" class="resource-fig" alt="Food Gatherers">
                     <p>The Food Gatherers organization, founded by Zingerman’s Delicatessen, provides access to over 150 food partners throughout Washtenaw County. 
                         Use the online map/list to locate a food pantry or free meal distributor based on your need.
                     </p>
-                    
-                    <strong>
-                        Phone: (734) 761-2796
-                        <br>
-                        Webiste: <a href="https://www.foodgatherers.org/">Visit the Food Gatherers website</a>
-                    </strong>
+                    <p>
+                        Phone: (734) 761-2796 <br>
+                        Webiste: <a href="https://www.foodgatherers.org/" class="link">Visit the Food Gatherers website</a>
+                    </p>
                 </div>
-
+        
                 <div class="resource">
-                    <h3> Financial Aid Office </h3>
+                    <h3>Financial Aid Office</h3>
                     <img src="./images/basic_needs/financialaid.jpg" class="resource-fig" alt="Financial Aid Office">
                     <p>U-M’s Office of Financial Aid provides financial resources and support to undergraduate and graduate students. 
                         Resources include scholarships, grants, private student loans, short-term emergency loans, work-study opportunities, financial aid re-evaluation, and help with FAFSA applications.
                     </p>
-                    
-                    <strong>
-                        Webiste: <a href="https://finaid.umich.edu/">Visit the Financial Aid Office website</a>
-                    </strong>
+                    <p>
+                        Webiste: <a href="https://finaid.umich.edu/" class="link">Visit the Financial Aid Office website</a>
+                    </p>
                 </div>
-            </div>
-
-            <div class="container">
+        
                 <div class="resource">
-                    <h3> Equity, Civil Rights, and Title IX – HR Reporting</h3>
-                    <img src="./images/basic_needs/hr-reporting.jpg" class="resource-fig" alt="Equity, Civil Rights, and Title IX – HR Reporting" >
+                    <h3>Equity, Civil Rights, and Title IX – HR Reporting</h3>
+                    <img src="./images/basic_needs/hr-reporting.jpg" class="resource-fig" alt="Equity, Civil Rights, and Title IX – HR Reporting">
                     <p>Equity, Civil Rights, and Title IX (ECRT) is a vital resource for promoting diversity and equal opportunity at U-M. 
                         ECRT provides support for issues involving discrimination, discriminatory harassment or sexual misconduct, and can assist individuals with filing a complaint.
                     </p>
-                    
-                    <strong>
-                        Webiste: <a href="https://ecrt.umich.edu/">Visit the  Equity, Civil Rights, and Title IX – HR Reporting website</a>
-                    </strong>            
+                    <p>
+                        Webiste: <a href="https://ecrt.umich.edu/" class="link">Visit the Equity, Civil Rights, and Title IX – HR Reporting website</a>
+                    </p>
                 </div>
-
+        
                 <div class="resource">
-                    <h3> Careers at U-M</h3>
+                    <h3>Careers at U-M</h3>
                     <img src="./images/basic_needs/um-careers.jpg" class="resource-fig" alt="Careers at U-M">
                     <p>The University of Michigan career site provides a variety of employment opportunities, including professional, temporary and student jobs. Visit the website to search for open positions and apply.
                     </p>
-                    
-                    <strong>
-                        Webiste: <a href="http://careers.umich.edu/search">Visit the Careers at U-M website</a>
-                    </strong>
-                </div>
-
-                <div class="resource">
-                    <h3>Inter-Cooperative Council at Ann Arbor </h3>
-                    <img src="./images/basic_needs/annarbor.jpg" class="resource-fig" alt="Inter-Cooperative Council at Ann Arbor">
                     <p>
-                        The Inter-Cooperative Council of Ann Arbor offers low-cost student housing with shared common spaces and responsibilities for the home. Some food is included in the rental price.  
+                        Webiste: <a href="http://careers.umich.edu/search" class="link">Visit the Careers at U-M website</a>
                     </p>
-                    
-                    <strong>
-                        Phone: (734) 662-4414
-                        <br>
-                        Webiste: <a href="https://icc.coop/">Visit the Inter-Cooperative Council at Ann Arbor website</a>
-                    </strong>
+                </div>
+        
+                <div class="resource">
+                    <h3>Inter-Cooperative Council at Ann Arbor</h3>
+                    <img src="./images/basic_needs/annarbor.jpg" class="resource-fig" alt="Inter-Cooperative Council at Ann Arbor">
+                    <p>The Inter-Cooperative Council of Ann Arbor offers low-cost student housing with shared common spaces and responsibilities for the home. Some food is included in the rental price.  
+                    </p>
+                    <p>
+                        Phone: (734) 662-4414 <br>
+                        Webiste: <a href="https://icc.coop/" class="link">Visit the Inter-Cooperative Council at Ann Arbor website</a>
+                    </p>
                 </div>
             </div>
         </section>

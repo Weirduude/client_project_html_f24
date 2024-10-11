@@ -2,33 +2,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #00274C;
     color: #FFF;
-    font-size: 20%;
+    font-size: 50%;
 }
 
 
 
 /* H_n */
 h1 {
-    font-size: 40%;
+    font-size: 200%;
     text-align: center;
-    padding: 15%;
+    padding: 5%;
 }
 
 h2 {
-    font-size: 30%;
+    font-size: 150%;
 }
 
 h3 {
-    font-size: 25%;
+    font-size: 100%;
 }
 
 /* link */
-
-.link {
-    color: #FFF;
-    font-size: 30%;
-    text-decoration: none;
-}
 
 .link:hover{
     color: #FFCB05;
@@ -52,24 +46,31 @@ p {
 }
 
 /* div */
+.gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
 div.gallery {
-    margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 400px;
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 5%;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
+.gallery-description{
+    text-align: start;
 
+}
 div.gallery img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 div.desc {
-    padding: 15px;
+    padding: 5%;
     text-align: center;
 }
 
@@ -79,32 +80,7 @@ p {
     padding: 10px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-div.resource {
-    flex: 1 1 30%; /* 设置每个div占据父容器的30% */
-    max-width: 30%;
-    height: auto;
-    margin-right: 3%; /* 设置两个div之间的间距 */
-    padding: 10px;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
-    margin-bottom: 20px; /* 添加底部间距 */
-}
-
-div.resource:last-child {
-    margin-right: 0;
-}
-
-img.resource-fig {
-    width: 100%; /* 设置图片宽度为div的100% */
-    height: auto; /* 高度自动调整 */
-    object-fit: cover;
-}
 
 .link-box {
     display: inline-block;
@@ -124,8 +100,9 @@ img.resource-fig {
 
 .grid2col {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 5fr 3fr;
     align-items: center; 
+    justify-content: flex-end;
     gap: 10%; 
 }
 
@@ -140,15 +117,72 @@ img.resource-fig {
 
 .grid-img{
     width: 100%;
-    justify-self: end;
+    justify-self: flex-end;
 }
 
 .grid-img img {
-    width: 70%; 
+    width: 30%; 
     height: auto;   
     /* justify-self: end; */
+    /* align-self: flex-end; */
+}
+
+.link {
+    color: #FFCB05;
+    font-size: 110%;
+    text-decoration: none;
+    justify-self: start;
+}
+
+.link p{
+    color: #FFF;
+}
+
+ul li {
+    margin: 5% 2%;
 }
 
 
+ol {
+    list-style-type: decimal;
+}
 
+ol li {
+    margin: 2% 5%;
+}
+
+
+.resources-section {
+    width: 100%; /* 占满整个宽度 */
+    margin-bottom: 50%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; /* 单列，占满整个宽度 */
+    grid-auto-rows: repeat(auto, 6); /* 设置每行的高度 */
+    gap: 1%; /* 设置行间距 */
+}
+
+.resource {
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    text-align: left; /* 文本左对齐 */
+    width: 100%; /* 占满整个grid单元 */
+    height: auto; /* 根据内容自动调整高度 */
+}
+
+.resource-fig {
+    max-width: 80%; /* 确保图片宽度不超过容器 */
+    height: auto; /* 自适应高度 */
+    /* center the fig */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resource h3 {
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
 

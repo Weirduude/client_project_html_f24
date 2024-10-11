@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Spaces on Campus</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <a href="#main">Skip to Main Content</a>
     <header>
-        <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-        <nav>
+        <div class="grid2col">
+            <div class="grid-img">
+                <img src="./images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" >
+            </div>
+
+            <a href="#main" class="link grid-paragraph" >Skip to Main Content</a>
+        </div>
+
+        <nav class="link">
+            <p> Go to: </p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="study_spaces_campus.html"> Study Spaces on Campus</a></li>
-                <li><a href="basic_needs.html"> Student Life: Basic Needs</a></li>
-                <li><a href="academic_advising.html"> Academic Advising</a></li>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="study_spaces_campus.html" class="link"> Study Spaces on Campus</a></li>
+                <li><a href="basic_needs.html" class="link"> Student Life: Basic Needs</a></li>
+                <li><a href="academic_advising.html" class="link"> Academic Advising</a></li>
             </ul>
         </nav>
         <h1>Study Spaces on Campus</h1>
@@ -33,101 +42,106 @@
         </section>
         <section>
             <h2>North Campus</h2>
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/duder.jpg">
-                    <img src="images/study_places/duder.jpg" alt="duder" width="600" height="400">
-                </a>
-                <div class="desc">Duderstadt Center (The Dude)</div>
-            </div>
+            <div class="gallery-grid">
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/duder.jpg">
+                        <img src="images/study_places/duder.jpg" alt="duder" width="600" height="400">
+                    </a>
+                    <div class="desc">Duderstadt Center (The Dude)</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/pierpont.jpeg">
-                    <img src="images/study_places/pierpont.jpeg" alt="pierpont" width="600" height="400">
-                </a>
-                <div class="desc">Pierpont Commons</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/ncrc.jpg">
-                    <img src="images/study_places/ncrc.jpg" alt="NCRC" width="600" height="400">
-                </a>
-                <div class="desc">North Campus Research Complex (NCRC)</div>
-            </div>
-
-            <br style="clear:both">
-            <ul>
-                <li>
+                <div class="gallery-description">
                     <strong>Duderstadt Center (The Dude)</strong>
                     <p>
                         A versatile study space with computer labs, collaborative rooms, and quiet areas. It also has
                         the Engineering Library and the famous Media Union.
                     </p>
-                </li>
+                </div>
 
-                <li>
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/pierpont.jpeg">
+                        <img src="images/study_places/pierpont.jpeg" alt="pierpont" width="600" height="400">
+                    </a>
+                    <div class="desc">Pierpont Commons</div>
+                </div>
+
+                <div class="gallery-description">
                     <strong>Pierpont Commons</strong>
                     <p>
                         Various seating areas and study spaces are available, including the Atrium and the Fireside
                         Cafe.
                     </p>
-                </li>
+                </div>
 
-                <li>
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/ncrc.jpg">
+                        <img src="images/study_places/ncrc.jpg" alt="NCRC" width="600" height="400">
+                    </a>
+                    <div class="desc">North Campus Research Complex (NCRC)</div>
+                </div>
+
+                <div class="gallery-description">
                     <strong>North Campus Research Complex (NCRC)</strong>
                     <p>
                         Some buildings have specific study areas available for students.
                     </p>
-                </li>
-            </ul>
+                </div>
+
+            </div>
+            <br style="clear:both">
 
         </section>
 
         <section>
             <h2>Central Campus</h2>
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/UGLI.jpg">
-                    <img src="images/study_places/UGLI.jpg" alt="UGLI" width="600" height="400">
-                </a>
-                <div class="desc">Undergraduate Library (UGLi)</div>
-            </div>
+            <div class="gallery-grid">
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/UGLI.jpg">
+                        <img src="images/study_places/UGLI.jpg" alt="UGLI" width="600" height="400">
+                    </a>
+                    <div class="desc">Undergraduate Library (UGLi)</div>
+                </div>
 
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/hatcher.jpg">
-                    <img src="images/study_places/hatcher.jpg" alt="hacther" width="600" height="400">
-                </a>
-                <div class="desc">Hatcher Graduate Library</div>
-            </div>
-
-            <div class="gallery">
-                <a target="_blank" href="images/study_places/union.jpg">
-                    <img src="images/study_places/union.jpg" alt="union" width="600" height="400">
-                </a>
-                <div class="desc">Michigan Union</div>
-            </div>
-            <br style="clear:both">
-            <ul>
-                <li>
+                <div class="gallery-description">
                     <strong>Undergraduate Library (UGLi):</strong>
                     <p>
                         The UGLi is a popular study spot for undergraduate students. It has a mix of individual and
                         group study spaces, as well as computer labs.
                     </p>
-                </li>
-                <li>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/hatcher.jpg">
+                        <img src="images/study_places/hatcher.jpg" alt="hacther" width="600" height="400">
+                    </a>
+                    <div class="desc">Hatcher Graduate Library</div>
+                </div>
+
+                <div class="gallery-description">
                     <strong>Hatcher Graduate Library</strong>
                     <p>
                         The Hatcher Graduate Library is a popular study spot for graduate students. It has a mix of
                         individual and group study spaces, as well as computer labs.
                     </p>
-                </li>
-                <li>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/study_places/union.jpg">
+                        <img src="images/study_places/union.jpg" alt="union" width="600" height="400">
+                    </a>
+                    <div class="desc">Michigan Union</div>
+                </div>
+
+                <div class="gallery-description">
                     <strong>Michigan Union</strong>
                     <p>
                         The Michigan Union has various study spaces, including lounges, cafes, and the Willis Ward
                         Lounge.
                     </p>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <br style="clear:both">
+
         </section>
     </main>
     <footer>
