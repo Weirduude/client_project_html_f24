@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #00274C;
     color: #FFF;
-    font-size: 50%;
+    font-size: 80%;
 }
 
 
@@ -85,11 +85,10 @@ p {
 .link-box {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0E4A71; /* 初始颜色 */
+    background-color: #c39e0b; /* 初始颜色 */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* 添加过渡效果 */
 }
 
 /* 鼠标悬停时的样式 */
@@ -103,12 +102,12 @@ p {
     grid-template-columns: 5fr 3fr;
     align-items: center; 
     justify-content: flex-end;
-    gap: 10%; 
+    gap: 5%; 
 }
 
 .grid-paragraph {
     padding: 0; 
-    margin: 0; 
+    margin-right: 5%; 
 }
 
 .grid-paragraph ul{
