@@ -85,8 +85,8 @@ p {
 .link-box {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #c39e0b; /* 初始颜色 */
-    color: white;
+    background-color: #FFCB05; /* 初始颜色 */
+    color: black;
     text-decoration: none;
     border-radius: 5px;
 }
