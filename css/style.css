@@ -179,7 +179,9 @@ ol li {
     text-align: left; /* 文本左对齐 */
     width: 100%; /* 占满整个grid单元 */
     height: auto; /* 根据内容自动调整高度 */
+
 }
+
 
 .resource-fig {
     max-width: 80%; /* 确保图片宽度不超过容器 */
@@ -196,164 +198,189 @@ ol li {
 }
 
 @media screen and (min-width: 700px) {
-    .gallery-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-    }
-    div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 400px;
-    }
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
-    div.gallery img {
-        width: 400px;
-        height: 300px;
-    }
-    div.desc {
-        padding: 15px;
-        text-align: center;
-    }
-    p {
-        width: 100%; 
-        margin-left: 0;
-        padding: 10px;
-    }
+
+:root {
+    --um-blue: #00274c;
+    --um-maize: #ffcb05;
+    --um-light-gray: #f8f9fa;
+    --um-dark-gray: #333;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--um-dark-gray);
+    background-color: var(--um-light-gray);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--um-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: var(--um-blue);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header .grid2col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header img {
+    margin-right: 20px;
+    width: 100%;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+    background-color: var(--um-blue);
+    padding: 15px 0;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--um-maize);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.introduction-section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Section Headers */
+h2 {
+    color: var(--um-blue);
+    font-size: 2em;
+    margin-top: 30px;
+    border-bottom: 3px solid var(--um-maize);
+    padding-bottom: 5px;
+}
+
+/* Links and Buttons */
+.link-box {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--um-maize);
+    color: var(--um-blue);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.link-box:hover {
+    background-color: #ffde7d;
+}
+
+.link {
+    font-size: 1.5em;
+}
+
+/* Resource Section */
+.resources-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.resource {
+    color: white;
+    padding: 20px;
+    border: 1px solid var(--um-light-gray);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2e2e2e;
+}
 
 
+.resource img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
 
-    div.resource {
-        flex: 1 1 30%;
-        max-width: 30%;
-        height: auto;
-        margin-right: 3%; 
-        padding: 10px;
-        background-color: #f0f0f0;
-        box-sizing: border-box; 
-        margin-bottom: 20px; /
-    }
+/* Gallery Grid for Study Spaces */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
 
-    div.resource:last-child{
-        margin-right: 0;
-    }
+.gallery {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    img.resource-fig {
-        width: 100%; /* 设置图片宽度为div的100% */
-        height: auto; /* 高度自动调整 */
-        object-fit: cover;
-    }
+.gallery img {
+    width: 100%;
+    height: auto;
+}
 
-    .link-box {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #FFCB05; /* 初始颜色 */
-        color: black;
-        text-decoration: none;
-        border-radius: 5px;
-    }
-    /* 鼠标悬停时的样式 */
-    .link-box:hover {
-        background-color: #FFB300; /* 鼠标悬停时变深的颜色 */
-    }
+.gallery-description {
+    padding: 15px;
+    font-size: 1em;
+}
 
-    .link{
-        font-size: 150%;
-    }
-    
-    .link p {
-        font-size: 150%;
-    }
+/* Footer */
+footer * {
+    background-color: var(--um-blue);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9e
+}
 
-    .grid2col {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        margin: 1%;
-    }
-
-    .grid-img {
-        grid-column:2; 
-        position: absolute;
-        top:0;
-        left: 80%;
-        height: 50%;
-        width: 50%;
-    }
-
-    .grid-paragraph {
-        grid-column: 1;
-        position: absolute;
-        top: 0;
-        left: 0; 
-    }
-
-    .resources-section {
-        padding: 50px 0;
-        
-    }
-    
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        max-width: 100%;
-        /* margin: 0 auto; */
-    
-    }
-    
-    .resource {
-        background-color: #ffffff;
-        border-radius: 8px;
-        max-width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .resource:hover {
-        transform: translateY(-5px);
-    }
-    
-    .resource h3 {
-        font-size: 1.5rem;
-        color: #333333;
-        margin-bottom: 15px;
-    }
-    
-    .resource-fig {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
-        border-radius: 8px;
-        object-fit: cover;
-        margin-bottom: 15px;
-    }
-    
-    .resource p {
-        font-size: 0.95rem;
-        color: #000;
-        line-height: 1.6;
-        margin: 10px 0;
-    }
-    
-    .resource a.link {
-        color: #1e73be;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    .resource a.link:hover {
-        text-decoration: underline;
-    }
-
-    
-    body{
-        font-size: 110%;
-
-    }
 }
